@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Josh Melvin.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -34,9 +34,11 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -103,9 +105,89 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    ash = rg.SimpleTurtle('circle')
+    ash.pen = rg.Pen('black', 10)
+    ash.paint_bucket = rg.PaintBucket('black')
+    ash.pen_up()
+    ash.forward(500)
+    ash.pen_down()
+    ash.draw_circle(150)
+    ash.left(90)
+    ash.pen_up()
+    ash.forward(150)
+    ash.right(90)
+    ash.forward(25)
+    ash.left(90)
+    ash.begin_fill()
+    ash.draw_circle(25)
+    ash.end_fill()
+    ash.right(90)
+    ash.forward(125)
+    ash.left(180)
+    ash.pen_down()
+    ash.forward(100)
+    ash.right(90)
+    ash.draw_circle(50)
+    ash.pen_up()
+    ash.left(90)
+    ash.forward(100)
+    ash.pen_down()
+    ash.forward(100)
+
+
+def turtle5():
+    fennekin = rg.SimpleTurtle('square')
+    litten = rg.SimpleTurtle('square')
+    fennekin.pen = rg.Pen('red', 20)
+    litten.pen = rg.Pen('red', 20)
+    f_start = rg.Point(-550, 250)
+    l_start = rg.Point(-550, 175)
+    fennekin.pen_up();litten.pen_up()
+    fennekin.go_to(f_start);litten.go_to(l_start)
+    fennekin.pen_down();litten.pen_down()
+    fennekin.left(180);litten.left(180)
+    fennekin.forward(25);litten.forward(25)
+    fennekin.right(90);litten.right(90)
+    fennekin.forward(50);litten.forward(25)
+    fennekin.right(90);litten.right(90)
+    fennekin.forward(25);litten.draw_square(25)
+    fennekin.pen_up();litten.pen_up()
+    fennekin.go_to(rg.Point(-510, 240));litten.go_to(rg.Point(-530,175))
+    fennekin.pen_down();litten.pen_down()
+    fennekin.left(90);litten.left(90)
+    fennekin.forward(10);litten.forward(50)
+    fennekin.draw_square(25)
+    litten.right(90);litten.forward(25)
+    fennekin.pen_up();fennekin.go_to(rg.Point(-510,300))
+    litten.right(90);litten.forward(50)
+    fennekin.pen_down();fennekin.right(90);fennekin.forward(50)
+    litten.right(180);litten.forward(50)
+    fennekin.right(180);fennekin.forward(25)
+    litten.right(90);litten.forward(25)
+    fennekin.left(90);fennekin.forward(50)
+    litten.right(90);litten.forward(50)
+    fennekin.left(90);litten.left(90)
+    fennekin.pen_up();litten.pen_up()
+    fennekin.go_to(rg.Point(-420, 250));litten.go_to(rg.Point(-425, 165))
+    fennekin.pen_down();litten.pen_down()
+    fennekin.left(180);fennekin.forward(25)
+    litten.left(90);litten.forward(10);litten.draw_square(25)
+    fennekin.right(90);fennekin.forward(50)
+    fennekin.right(90);fennekin.forward(25)
+    litten.pen_up();litten.go_to(rg.Point(-403,175))
+    litten.pen_down();litten.forward(50)
+    litten.pen_up();litten.go_to(rg.Point(-378,175))
+    fennekin.pen_up();litten.pen_down()
+    fennekin.go_to(rg.Point(-400,250));fennekin.left(90);fennekin.pen_down()
+    fennekin.forward(50);litten.forward(50)
+    fennekin.right(180);fennekin.forward(25)
+    fennekin.left(90);fennekin.forward(25)
+    fennekin.right(90);fennekin.forward(25)
+
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -118,7 +200,6 @@ def turtle3():
 #            (Hint: the answer is NOT 1.)
 #     -- What line of code calls the   main   function?
 #            (Answer: look at the LAST line of this module, far below.)
-#
 #     ** ASK QUESTIONS if you are uncertain. **
 #
 #   RELATE what is DRAWN to the CODE above.  Be sure you understand:
@@ -137,7 +218,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +248,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +264,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
