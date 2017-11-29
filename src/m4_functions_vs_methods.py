@@ -80,11 +80,11 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
     turtle3()
-    try_methods()
-    try_functions()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -173,9 +173,17 @@ def try_methods():
       -- forward    50 units
       -- backward  100 units
     """
+    bill = rg.SimpleTurtle()
+    bill.pen = rg.Pen('brown', 5)
+
+    bill.forward(150)
+    bill.left(90)
+    bill.forward(50)
+    bill.backward(100)
+
 
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
@@ -188,6 +196,10 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
+
 
     ####################################################################
     # TODO: 4. Implement this function, per its doc-string above.
@@ -235,8 +247,31 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    jeff = rg.SimpleTurtle()
+    jeff.pen = rg.Pen('blue', 5)
+
+    jeff.backward(150)
+
+    jeff.speed = 1
+    draw_many_squares(jeff, 2, 100, 30)
+
+    jeff.speed = 5
+    rg.Pen('red', 5)
+    draw_many_squares(jeff, 10, 50, 15)
+
+    jeff.speed = 100
+    rg.Pen('red', 35)
+    draw_many_squares(jeff, 8, 300, 60)
+
+    jeff.pen = rg.Pen('black', 3)
+
+    jeff.backward(200)
+    jeff.draw_circle(30)
+    jeff.draw_square(50)
+
+
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
