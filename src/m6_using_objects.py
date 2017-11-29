@@ -34,6 +34,8 @@ def two_circles():
     #    (by calling this function).
     # ------------------------------------------------------------------
 
+    window = rg.RoseWindow()
+
 
 def circle_and_rectangle():
     """
