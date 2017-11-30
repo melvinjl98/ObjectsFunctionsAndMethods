@@ -55,7 +55,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
 #            When you want a window to stay open as long as you want to
 #            Because it allows people to examine the window indefinitely,
-#            until they are done with it and click to remove it
+#            until they are done with it and then it can be clicked on to easily remove.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
