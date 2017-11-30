@@ -14,6 +14,9 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
+    two_circles()
+
+
 
 
 def two_circles():
@@ -35,6 +38,17 @@ def two_circles():
     # ------------------------------------------------------------------
 
     window = rg.RoseWindow()
+
+    circle1 = rg.Circle(rg.Point(100,100), 50)
+    circle1.fill_color = 'firebrick3'
+    circle1.attach_to(window)
+
+    circle2 = rg.Circle(rg.Point(133, 231), 46)
+    circle2.attach_to(window)
+
+    window.render()
+
+    window.close_on_mouse_click()
 
 
 def circle_and_rectangle():
@@ -78,6 +92,21 @@ def circle_and_rectangle():
     #       instance variables for outline thickness, etc.
     # ------------------------------------------------------------------
 
+    window = rg.RoseWindow(333, 333)
+
+    center = rg.Point(125,187)
+
+    circle = rg.Circle(center, 50)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+
+    rectangle = rg.Circle(rg.Point(133, 231), 46)
+    rectangle.attach_to(window)
+
+    window.render()
+
+    window.close_on_mouse_click()
+
 
 def lines():
     """
@@ -104,6 +133,21 @@ def lines():
     # ------------------------------------------------------------------
     # TODO: 4. Implement and test this function.
     # ------------------------------------------------------------------
+
+    window = rg.RoseWindow(333, 333)
+
+    center = rg.Point(125,187)
+
+    circle = rg.Circle(center, 50)
+    circle.fill_color = 'blue'
+    circle.attach_to(window)
+
+    rectangle = rg.Circle(rg.Point(133, 231), 46)
+    rectangle.attach_to(window)
+
+    window.render()
+
+    window.close_on_mouse_click()
 
 
 # ----------------------------------------------------------------------

@@ -17,7 +17,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              BOTTOM LEFT
+#              TOP LEFT
 #
 #        -- In what direction on the screen does the positive X-axis point?
 #              RIGHT
@@ -99,14 +99,14 @@ def example2():
     # Note: the y-axis goes DOWN from the TOP.
     # ------------------------------------------------------------------
     point1 = rg.Point(100, 150)
-    point2 = rg.Point(200, 50)
+    #point2 = rg.Point(200, 50)
 
     # ------------------------------------------------------------------
     # A RoseGraphics object is not associated with a window,
     # and hence are not drawn, until you ATTACH it to a window.
     # ------------------------------------------------------------------
     point1.attach_to(window)
-    point2.attach_to(window)
+    #point2.attach_to(window)
 
     # ------------------------------------------------------------------
     # And they still are not DRAWN until you RENDER the window.
